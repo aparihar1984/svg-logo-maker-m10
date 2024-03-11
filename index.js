@@ -2,7 +2,7 @@
 const inquirer = require("inquirer");
 const fs = require("fs");
 // Importing classes from ./lib/shapes directory for our module shapes.
-// const { Triangle, Square, Circle } = require("./lib/shapes");
+const { Triangle, Square, Circle } = require("./lib/shapes");
 
 // Using the answers from the user, the function writeToFile creates the SVG file.
 function writeToFile(fileName, answers) {
@@ -80,7 +80,7 @@ function promptUser() {
           promptUser();
         } else {
           // Calling the write file function to generate an SVG file
-        //   writeToFile("logo.svg", answers);
+          writeToFile("logo.svg", answers);
         }
       });
   }
