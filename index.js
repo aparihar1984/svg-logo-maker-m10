@@ -76,7 +76,7 @@ function promptUser() {
       .then((answers) => {
         // Error message if the user does not enter 3 characters (3 characters are needed for the logo to generate).
         if (answers.text.length > 3) {
-          console.log("Must enter a value of no more than 3 characters");
+          console.log("Must enter only 3 characters");
           promptUser();
         } else {
           // Calling the write file function to generate an SVG file
